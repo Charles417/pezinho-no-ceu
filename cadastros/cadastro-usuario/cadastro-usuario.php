@@ -26,7 +26,7 @@
     <div class="usuarios">
         <h2>Cadastro de Usuários</h2>
 
-        <form action="" method="post" enctype="multipart/form-data">
+        <form action="create.php" method="post" enctype="multipart/form-data">
             <div class="campo">
                 <label>Nome: </label>
                 <input type="text" name="nome">
@@ -34,7 +34,7 @@
     
             <div class="campo">
                 <label>CPF: </label>
-                <input type="text" name="cpf">
+                <input type="number" name="cpf">
             </div>
 
             <div class="campo">
@@ -48,23 +48,18 @@
             </div>
 
             <div class="campo">
-                <label>Confirmar senha: </label>
-                <input type="text" name="confirmar-senha">
-            </div>
-
-            <div class="campo">
                 <label>E-mail: </label>
                 <input type="text" name="email">
             </div>
 
             <div class="campo">
                 <label>Telefone: </label>
-                <input type="text" name="telefone">
+                <input type="tel" name="telefone">
             </div>
 
             <div class="campo">
                 <label>CEP: </label>
-                <input type="text" name="cep">
+                <input type="number" name="cep">
             </div>
 
             <div class="campo">
@@ -78,7 +73,7 @@
             </div>
 
             <div class="cadastro">
-                <input type="submit" name="cadastrar" value="Cadastrar Usuário">
+                <button type="submit" name="cadastrar" >Cadastrar Usuário</button>
             </div>
         </form>
     </div>  

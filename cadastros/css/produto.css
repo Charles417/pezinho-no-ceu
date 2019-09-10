@@ -65,7 +65,7 @@ form .campo input {
     display: inline;
 }
 
-form .cadastro input {
+form .cadastro button {
     margin-left: 173px;
     font-size: 15px;
 }

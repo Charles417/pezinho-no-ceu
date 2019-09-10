@@ -26,7 +26,7 @@
     <div class="produtos">
         <h2>Cadastro de Produtos</h2>
 
-        <form method="post" enctype="multipart/form-data">
+        <form action="create.php" method="post" enctype="multipart/form-data">
             <div class="campo">
                 <label>Nome: </label>
                 <input type="text" name="nome">
@@ -49,7 +49,7 @@
             </div>
 
             <div class="cadastro">
-                <input type="submit" name="cadastrar" value="Cadastrar Produto">
+                <button type="submit" name="cadastrar">Cadastrar Produto</button>
             </div>
         </form>
 
