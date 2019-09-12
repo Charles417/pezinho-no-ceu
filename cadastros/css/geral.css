@@ -33,3 +33,17 @@ nav div {
 .busca label {
   display: inline-block;
 }
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+
+.btn {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}

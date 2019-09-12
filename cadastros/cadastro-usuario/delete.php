@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../css/geral.css">
+
 <?php 
 
 	require('../conn.php');
@@ -8,7 +10,7 @@
 
 	if ($conn->query($sql) == true)
 	{
-		echo "Dado excluido com sucesso";
+		header('Location: read.php');
 	}
 	else
 	{
