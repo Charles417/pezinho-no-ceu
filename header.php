@@ -13,7 +13,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #63B8FF;">
         <div class="container">
-            <a class="navbar-brand" href="home.php"><img class="logo" src="http://localhost:8080/pezinho-no-ceu/icons/Logo.png" alt="Logotipo Pézinho no Céu"></a>
+            <a class="navbar-brand" href="http://localhost:8080/pezinho-no-ceu/home.php"><img class="logo" src="http://localhost:8080/pezinho-no-ceu/icons/Logo.png" alt="Logotipo Pézinho no Céu"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -21,13 +21,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Sobre</a>
+                    <a class="nav-link" href="http://localhost:8080/pezinho-no-ceu/sobre.php">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Cadastro</a>
+                    <a class="nav-link" href="http://localhost:8080/pezinho-no-ceu/cadastros/cadastro-usuario/cadastro-usuario.php">Cadastro</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" href="http://localhost:8080/pezinho-no-ceu/login.php">Login</a>
                 </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
