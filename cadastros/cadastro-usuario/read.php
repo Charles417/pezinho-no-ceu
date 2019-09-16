@@ -1,8 +1,8 @@
-<link rel="stylesheet" href="../css/geral.css">
+<link rel="stylesheet" href="../../css/geral.css">
 
 <?php 
 
-	require('../conn.php');
+	require('../../conn.php');
 
 	$sql = "SELECT * FROM usuario";
 
@@ -28,7 +28,7 @@
 				<td><?= $row['cpf'];?></td>
 				<td><button><?= "<a href='delete.php?id=" .$row['id_usuario'] . "'>apagar</a><hr>";?></button></td>
 				</tr>
-	<?php
+		<?php
 				
 			}
 		}
@@ -37,4 +37,4 @@
 			echo "Nenhum resultado!";
 		}
 ?>
-</table>
+	</table>

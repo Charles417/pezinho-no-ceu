@@ -1,6 +1,6 @@
 <?php 
 
-	require('../conn.php');
+	require('../../conn.php');
 
 	$nome = $_POST['nome'];
 	$cpf = $_POST['cpf'];
