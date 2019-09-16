@@ -4,24 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/produto.css">
     <title>Produtos</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/geral.css">
+    <link rel="stylesheet" href="../cadastro-css/produto.css">
+    <?php require_once "../../header.php"?> 
 </head>
 <body>
-
-    <nav>
-        <a href="" class="logotipo">Logo</a>
-        <div class="busca">
-            <input type="text" name="q" id="busca">
-            <input type="submit" name="busca" id="busca" value="Busca">
-        </div>
-        <div>
-            <a href="">Sobre</a>
-            <a href="">Login</a>
-            <a href="">Cadastro</a>
-        </div>
-    </nav>
 
     <div class="produtos">
         <h2>Cadastro de Produtos</h2>
@@ -52,9 +42,12 @@
                 <button type="submit" name="cadastrar">Cadastrar Produto</button>
             </div>
         </form>
-
-
     </div>
+
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/geral.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+
 </body>
 </html>
 

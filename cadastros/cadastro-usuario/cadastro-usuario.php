@@ -4,24 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/usuario.css">
     <title>Usuários</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/geral.css">
+    <link rel="stylesheet" href="../cadastro-css/usuario.css">
+    <?php require_once "../../header.php"?> 
 </head>
 <body>
-
-    <nav>
-        <a href="" class="logotipo">Logo</a>
-        <div class="busca">
-            <input type="text" name="q" id="busca">
-            <input type="submit" name="busca" id="busca" value="Busca">
-        </div>
-        <div>
-            <a href="">Sobre</a>
-            <a href="">Login</a>
-            <a href="">Cadastro</a>
-        </div>
-    </nav>
 
     <div class="usuarios">
         <h2>Cadastro de Usuários</h2>
@@ -34,7 +24,7 @@
     
             <div class="campo">
                 <label>CPF: </label>
-                <input type="number" name="cpf">
+                <input type="text" name="cpf">
             </div>
 
             <div class="campo">
@@ -59,7 +49,7 @@
 
             <div class="campo">
                 <label>CEP: </label>
-                <input type="number" name="cep">
+                <input type="text" name="cep">
             </div>
 
             <div class="campo">
@@ -76,6 +66,11 @@
                 <button type="submit" name="cadastrar" >Cadastrar Usuário</button>
             </div>
         </form>
-    </div>  
+    </div>
+
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/geral.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+
 </body>
 </html>

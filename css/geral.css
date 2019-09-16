@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link {
+    color: #FFF !important;
+}
+
+.logo {
+    height: 80px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td { 
+    border: 2px solid black;
+}
+
+.btn {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
+
+main ul.produtos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main ul.produtos li {
+    margin: 8px;
+    border: 1px solid #CCC;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0px 0px 8px 0px #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main ul.produtos li img {
+    margin-bottom: 8px;
+}
+
+main ul.produtos li a.nome {
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: #36F;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    height: 100px;
+}
+
+.container-fluid{
+     margin-top: 10px;
+}
+.contato{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-left: 260px;
+    padding-top: 28px;
+    padding-right: 110px;
+}
+
+
+
+
+

@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    margin: 16px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #448aff;
+}
+
+/* Form */
+
+form .campo {
+    margin-bottom: 8px;
+}
+
+form .campo label {
+    display: inline-block;
+    width: 170px;
+    font-weight: bold;
+    text-align: right;
+}
+
+form .campo input {
+    display: inline;
+}
+
+form .cadastro button {
+    margin-left: 173px;
+    font-size: 15px;
+}
