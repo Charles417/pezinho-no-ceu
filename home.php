@@ -43,17 +43,137 @@
             </div>
             <div class="col-1"></div>
         </div>
-    </div>
 
-    <footer>
-        <div class="contato">
-            <section><a class="conteudo"><img src="icons/tel.png" alt="">(16)996588569 / 996588569</a></section>
-            <section><a class="conteudo"><img src="icons/mail.png" alt="">texeira.mariafumaça@gmail.com</a></section>
-            <section><a class="conteudo"><img src="icons/face.png" alt=""></a>José Teixeira Junior</section>
-            <section><a class="conteudo"><img src="icons/insta.png" alt=""></a>Texeirinhafazfumaça</section>
-            <section><a class="conteudo"><img src="" alt=""></a></section>
+        <div>
+            <ul class="produtos">
+                <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do card</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Link do card</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do card</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Link do card</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do card</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Link do card</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do card</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Link do card</a>
+                    </div>
+                </div>
+            </ul>
         </div>
+        <div>
+            <ul class="produtos">
+                <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do card</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Link do card</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do card</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Link do card</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do card</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Link do card</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do card</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Link do card</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        
+    </div>
+    <footer>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <section><a class="conteudo"><img src="icons/tel.png" alt="">(16)996588569 / 996588569</a></section>
+                </div>
+                <div class="col-sm">
+                    <section><a class="conteudo"><img src="icons/mail.png" alt="">teixeira@gmail.com</a></section>
+                </div>
+            </div>       
+        </div>
+    
+    
     </footer>
+     
     
 </body>
 </html>

@@ -71,6 +71,11 @@ footer{
     padding-top: 28px;
     padding-right: 110px;
 }
+.produtos{
+    display: flex;  
+    justify-content: center;
+    padding-top: 25px;
+}
 
 
 
