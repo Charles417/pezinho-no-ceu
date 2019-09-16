@@ -13,7 +13,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #63B8FF;">
         <div class="container">
-            <a class="navbar-brand" href="http://localhost:8080/pezinho-no-ceu/home.php"><img class="logo" src="http://localhost:8080/pezinho-no-ceu/icons/Logo.png" alt="Logotipo Pézinho no Céu"></a>
+            <a class="navbar-brand" href="http://localhost:8080/pezinho-no-ceu/home.php"><img class="logo" src="http://localhost:8080/pezinho-no-ceu/icons/logo.png" alt="Logotipo Pézinho no Céu"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
