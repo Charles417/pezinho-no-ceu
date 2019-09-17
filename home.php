@@ -41,11 +41,10 @@
                     <span class="sr-only">Próximo</span>
                 </a>
             </div>
-            <div class="col-1"></div>
         </div>
 
         <div>
-            <ul class="produtos">
+            <ul class="cards">
                 <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
                     <div class="card-body">
@@ -53,11 +52,8 @@
                         <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">R$: </li>
                     </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Link do card</a>
-                    </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
@@ -66,11 +62,8 @@
                         <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">R$: </li>
                     </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Link do card</a>
-                    </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
@@ -79,11 +72,8 @@
                         <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">R$: </li>
                     </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Link do card</a>
-                    </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
@@ -92,16 +82,13 @@
                         <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">R$: </li>
                     </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Link do card</a>
-                    </div>
                 </div>
             </ul>
         </div>
         <div>
-            <ul class="produtos">
+            <ul class="cards">
                 <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
                     <div class="card-body">
@@ -109,11 +96,8 @@
                         <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">R$: </li>
                     </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Link do card</a>
-                    </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
@@ -122,11 +106,8 @@
                         <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">R$: </li>
                     </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Link do card</a>
-                    </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
@@ -135,11 +116,8 @@
                         <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">R$: </li>
                     </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Link do card</a>
-                    </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
@@ -148,11 +126,8 @@
                         <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">R$: </li>
                     </ul>
-                    <div class="card-body">
-                        <a href="#" class="card-link">Link do card</a>
-                    </div>
                 </div>
             </ul>
         </div>
