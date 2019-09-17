@@ -19,12 +19,12 @@ body {
     max-width: 600px;
     width: 95%;
     padding: 80px 2%;
-    background: white;
+    background: #42a5f5;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    
+    box-shadow: 5px 5px 0px 0px #CCC;
 }
 
 .login input{
@@ -43,9 +43,10 @@ body {
     cursor: pointer;
     margin-top: 8px;
     font-size: 14px;
-    background: #42a5f5;
+    background: #000;
     color: white;
-    border: 0;
+    border: 2px solid white;
+    border-radius: 4px;
 
 }
 

@@ -163,7 +163,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <section><a class="conteudo"><img src="icons/tel.png" alt="">(16)996588569 / 996588569</a></section>
+                    <section><a class="conteudo"><img src="icons/tel.png" alt="">(16) 994579779 / 992073929</a></section>
                 </div>
                 <div class="col-sm">
                     <section><a class="conteudo"><img src="icons/mail.png" alt="">teixeira@gmail.com</a></section>
