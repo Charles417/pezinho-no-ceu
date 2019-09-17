@@ -19,10 +19,6 @@
             <input type="passaword" name="senha" placeholder="Senha..." require>
             <input type="submit" name="acao" value="Logar">
         </form>
-
-
     </div>
-
-
 </body>
 </html>
