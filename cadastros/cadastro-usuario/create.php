@@ -16,7 +16,7 @@
 
 	if ($conn->query($sql) == true)
 	{
-		echo "Dado inserido no banco";
+		header ('Location: http://localhost:8080/pezinho-no-ceu/cadastros/cadastro-usuario/cadastro-usuario.php')
 	}
 	else
 	{
