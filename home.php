@@ -14,8 +14,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-1"></div>
-            <div id="carouselExampleIndicators" class="carousel slide col-10" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide col-12" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -43,110 +42,39 @@
             </div>
         </div>
 
-        <div>
-            <ul class="cards">
-                <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
+        <div class="cards row">
+        <?php
+            $sql = "SELECT * FROM produto ORDER BY RAND() LIMIT 0,8";
+            for ($i = 0; $i < 12; $i++) {
+        ?>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="cadastros/cadastro-produto/images/457aa9bc395cac9b46232d86d97bc09a.jpg" alt="Imagem de capa do card">
                     <div class="card-body">
                         <h5 class="card-title">Título do card</h5>
                         <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">R$: </li>
+                        <li class="list-group-item">R$: 180,00</li>
                     </ul>
                 </div>
-                <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Título do card</h5>
-                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">R$: </li>
-                    </ul>
-                </div>
-                <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Título do card</h5>
-                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">R$: </li>
-                    </ul>
-                </div>
-                <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Título do card</h5>
-                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">R$: </li>
-                    </ul>
-                </div>
-            </ul>
+            </div>
+            <?php
+                }
+            ?>
         </div>
-        <div>
-            <ul class="cards">
-                <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Título do card</h5>
-                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">R$: </li>
-                    </ul>
-                </div>
-                <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Título do card</h5>
-                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">R$: </li>
-                    </ul>
-                </div>
-                <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Título do card</h5>
-                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">R$: </li>
-                    </ul>
-                </div>
-                <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Título do card</h5>
-                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">R$: </li>
-                    </ul>
-                </div>
-            </ul>
-        </div>
-        
     </div>
     <footer>
-        
         <div class="container">
             <div class="row">
-                <div class="col-sm">
-                    <section><a class="conteudo"><img src="icons/tel.png" alt="">(16) 994579779 / 992073929</a></section>
+                <div class="col-sm-6">
+                    <section><a class="conteudo"><img src="icons/tel.png" alt=""> (16) 994579779 / 992073929</a></section>
                 </div>
-                <div class="col-sm">
-                    <section><a class="conteudo"><img src="icons/mail.png" alt="">teixeira@gmail.com</a></section>
+                <div class="col-sm-6">
+                    <section><a class="conteudo"><img src="icons/mail.png" alt=""> teixeira@gmail.com</a></section>
                 </div>
-            </div>       
+            </div>
         </div>
-    
-    
     </footer>
      
     
