@@ -1,3 +1,21 @@
+<?php
+    if(isset ($_POST['acao']))
+    {   
+        include ('conn.php');
+        $login = $conn->real_escape_string($_POST['login']);
+        $senha = md5($conn->real_escape_string($_POST['senha']));
+
+        if(empty($login) || empty($senha))
+        {
+            echo 'Campos vazios';
+        }else
+        {
+            $procurandopapai = $conn->query("SELECT * FROM `usuario` WHERE login = 'jaoo' AND senha = md5('a')");
+        }
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +32,7 @@
         <h2>
             Efetue o Login
         </h2>
-        <form>
+        <form method="POST">
             <input type="text" name="login" placeholder="Login..." require>
             <input type="passaword" name="senha" placeholder="Senha..." require>
             <input type="submit" name="acao" value="Logar">
@@ -22,3 +40,4 @@
     </div>
 </body>
 </html>
+
