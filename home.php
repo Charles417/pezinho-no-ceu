@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/geral.css">
     <?php require_once "header.php"?>
+    <?php require ('conn.php');?>
 </head>
 <body>  
 
@@ -45,19 +46,20 @@
         <div class="cards row">
         <?php
             $sql = "SELECT * FROM produto ORDER BY RAND() LIMIT 0,8";
-            for ($i = 0; $i < 12; $i++) {
+            $resultado = $conn->query($sql);
+            while ($row = $resultado->fetch_assoc()) {
         ?>
             <div class="col-md-3">
-                <div class="card">
-                    <img class="card-img-top" src="cadastros/cadastro-produto/images/457aa9bc395cac9b46232d86d97bc09a.jpg" alt="Imagem de capa do card">
+                <a href="produto.php"><div class="card">
+                    <img class="card-img-top" src="cadastros/cadastro-produto/images/<?= $row['imagem'];?>" alt="Imagem de capa do card">
                     <div class="card-body">
-                        <h5 class="card-title">Título do card</h5>
-                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                        <h5 class="card-title"><?= $row['nome'];?></h5>
+                        <p class="card-text"><?= $row['descricao'];?></p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">R$: 180,00</li>
+                        <li class="list-group-item">R$: <?= $row['preco'];?></li>
                     </ul>
-                </div>
+                </div></a>
             </div>
             <?php
                 }
