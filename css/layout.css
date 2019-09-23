@@ -1,0 +1,20 @@
+.corpo img {
+    width: 100%;
+    height: auto;
+}
+.rodape{
+    text-align: center;
+    font-size: 22px;
+    color: cadetblue;
+}
+.container{
+    padding-top: 20px;
+}
+.artigo{
+    padding-top: 15px;
+    width: 480px;
+}
+.texto{
+    text-align: center;
+}
+
