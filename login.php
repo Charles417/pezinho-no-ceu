@@ -1,19 +1,5 @@
-<?php
-    if(isset ($_POST['acao']))
-    {   
-        include ('conn.php');
-        $login = $conn->real_escape_string($_POST['login']);
-        $senha = md5($conn->real_escape_string($_POST['senha']));
-
-        if(empty($login) || empty($senha))
-        {
-            echo 'Campos vazios';
-        }else
-        {
-            $procurandopapai = $conn->query("SELECT * FROM `usuario` WHERE login = 'jaoo' AND senha = md5('a')");
-        }
-    }
-
+<?PHP
+   require_once "logado.php";
 ?>
 
 <!DOCTYPE html>

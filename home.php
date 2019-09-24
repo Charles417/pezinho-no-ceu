@@ -1,3 +1,8 @@
+<?php
+    require 'conn.php';
+    require 'logado.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +13,10 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/geral.css">
-    <?php require_once "header.php"?>
+    <?php require_once "header.php";?>
 </head>
-<body>  
-
+<body>
+     
     <div class="container-fluid">
         <div class="row">
             <div class="col-1"></div>
@@ -21,6 +26,17 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
+                    <?php 
+                    
+                    if (!array_key_exists('logado', $_SESSION))
+                    {
+                        session_destroy(); 
+                    }
+                    else
+                    {
+                        echo "Seja bem vindo " . $_SESSION['nome'];
+                    }
+                    ?>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="slider-imagens/r1.jpg" class="d-block w-100" alt="Nome do remédio">
@@ -141,7 +157,7 @@
                     <section><a class="conteudo"><img src="icons/tel.png" alt="">(16) 994579779 / 992073929</a></section>
                 </div>
                 <div class="col-sm">
-                    <section><a class="conteudo"><img src="icons/mail.png" alt="">teixeira@gmail.com</a></section>
+                    <section><a class="conteudo"><img src="icons/mail.png" alt="">jose.tjunior@sp.senac.br</a></section>
                 </div>
             </div>       
         </div>

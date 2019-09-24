@@ -26,9 +26,23 @@
                 <li class="nav-item">
                     <a class="nav-link" href="http://localhost:8080/pezinho-no-ceu/cadastros/cadastro-usuario/cadastro-usuario.php">Cadastro</a>
                 </li>
+                <?php
+                    if (!array_key_exists('logado', $_SESSION)) {
+                ?>
                 <li class="nav-item">
                     <a class="nav-link" href="http://localhost:8080/pezinho-no-ceu/login.php">Login</a>
                 </li>
+                <?php
+                    }
+
+                    if (array_key_exists('logado', $_SESSION) && $_SESSION['logado'] === true) {
+                ?>
+                <li class="nav-items">
+                    <a class="nav-link" href="http://localhost:8080/pezinho-no-ceu/logout.php">Logout</a>
+                </li>
+                <?php
+                    }
+                ?>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Pesquisa" aria-label="Search">
