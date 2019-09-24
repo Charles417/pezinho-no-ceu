@@ -72,7 +72,6 @@
                     <img class="card-img-top" src="cadastros/cadastro-produto/images/<?= $row['imagem'];?>" alt="Imagem de capa do card">
                     <div class="card-body">
                         <h5 class="card-title"><?= $row['nome'];?></h5>
-                        <p class="card-text"><?= $row['descricao'];?></p>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">R$: <?= $row['preco'];?></li>
