@@ -74,10 +74,22 @@ footer{
 .cards{
     display: flex;  
     justify-content: center;
-    padding-top: 25px;
+    margin: 2rem 0;
 }
 
+.cards .card {
+    margin-bottom: 1rem;
+    height: 350px;
+}
 
+.cards .card img {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
 
-
-
+footer {
+    display: block;
+    clear: both;
+    margin-top: 5rem;
+}

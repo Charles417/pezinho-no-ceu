@@ -11,6 +11,7 @@
 	if ($conn->query($sql) == true)
 	{
 		header('Location: read.php');
+		exit;
 	}
 	else
 	{
