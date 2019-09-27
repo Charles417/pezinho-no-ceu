@@ -1,8 +1,3 @@
-<?php
-    require 'conn.php';
-    require 'logado.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +9,10 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/geral.css">
     
-    <?php require_once "header.php"?>
-    <?php require ('conn.php');?>
+    <?php
+    require 'conn.php';
+    require 'logado.php'; 
+    require 'header.php';?>
 
 </head>
 <body>

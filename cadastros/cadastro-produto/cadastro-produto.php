@@ -1,3 +1,8 @@
+<?php
+    require '../../conn.php';
+    require '../../logado.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

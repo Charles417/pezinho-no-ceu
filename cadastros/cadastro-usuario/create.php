@@ -4,7 +4,7 @@
 
 	$nome = $_POST['nome'];
 	$cpf = $_POST['cpf'];
-	$login = $_POST['login'];
+	$login = $_POST['usuario'];
 	$senha = $_POST['senha'];
 	$email = $_POST['email'];
 	$telefone = $_POST['telefone'];
@@ -12,7 +12,7 @@
 	$cidade = $_POST['cidade'];
 	$uf = $_POST['uf'];
 
-	$sql = "INSERT INTO usuario (nome, cpf, login, senha, email, telefone, cep, cidade, uf) VALUES ( '$nome', $cpf, '$login', md5('$senha'), '$email', '$telefone', '$cep', '$cidade', '$uf')";
+	$sql = "INSERT INTO usuario (nome, cpf, usuario, senha, email, telefone, cep, cidade, uf) VALUES ( '$nome', $cpf, '$login', md5('$senha'), '$email', '$telefone', '$cep', '$cidade', '$uf')";
 
 	if ($conn->query($sql) == true)
 	{

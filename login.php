@@ -20,7 +20,7 @@
         </h2>
         <form method="POST">
             <input type="text" name="login" placeholder="Login..." require>
-            <input type="passaword" name="senha" placeholder="Senha..." require>
+            <input type="password" name="senha" placeholder="Senha..." require>
             <input type="submit" name="acao" value="Logar">
         </form>
     </div>

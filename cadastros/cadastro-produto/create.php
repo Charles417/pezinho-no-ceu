@@ -5,10 +5,10 @@
 	$nome = $_POST['nome'];
 	$descricao = $_POST['descricao'];
 	$preco = $_POST['preco'];
-	$extensao = strtolower(substr($_FILES['imagem']['name'], -4)); //pega a extensao do arquivo
-    $novo_nome = md5(time()) . $extensao; //define o nome do arquivo
-    $diretorio = "images/"; //define o diretorio para onde enviaremos o arquivo
-    move_uploaded_file($_FILES['imagem']['tmp_name'], $diretorio.$novo_nome); //efetua o upload
+	$extensao = strtolower(substr($_FILES['imagem']['name'], -4));
+    $novo_nome = md5(time()) . $extensao;
+    $diretorio = "images/";
+    move_uploaded_file($_FILES['imagem']['tmp_name'], $diretorio.$novo_nome);
 
 	$sql = "INSERT INTO produto (nome, descricao, preco, imagem) VALUES ( '$nome', '$descricao', '$preco', '$novo_nome')";
 

@@ -1,31 +1,34 @@
 <?php 
-
-	require('../../conn.php');
-
-	$id = $_POST['id_produto'];
+    
+    require('../../conn.php');
+    
+    $id = $_POST['id_produto'];
 	$nome = $_POST['nome'];
 	$descricao = $_POST['descricao'];
-	$preco = $_POST['preco'];
+    $preco = $_POST['preco'];
+    $extensao = strtolower(substr($_FILES['imagem']['name'], -4));
+    $novo_nome = md5(time()) . $extensao;
+    $diretorio = "images/";
+    move_uploaded_file($_FILES['imagem']['tmp_name'], $diretorio.$novo_nome);
+	
+	$sql = "UPDATE `produto` 
+		SET `id_produto`= $id,
+		`nome`='$nome',
+		`descricao`='$descricao',
+		`preco`= $preco,
+        `imagem` = '$novo_nome'
+        WHERE `id_produto`= $id";	
+        
+	if ($conn->query($sql) == true)
+	{
+		header('Location: http://localhost:8080/pezinho-no-ceu/cadastros/cadastro-produto/read.php');
+		echo "Dado atualizado com sucesso";
+	}
+	else
+	{
+		echo "Error: " . $conn->error;
+	}
 
-	$sql = "UPDATE 'produto' SET
-		'nome'= '$nome',
-		'descricao'= '$descricao',
-		'preco'= '$preco';
-		WHERE id_produto = $id";
+	$conn->close();
+
 ?>
-
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Editar Produto</title>
-    </head>
-    <body>
-
-        <h1>Produto Atualizado</h1>
-        <a href="read.php">Voltar</a>
-    
-    </body>
-    </html>
