@@ -1,5 +1,12 @@
 <?php
     session_start();
+    require "../../conn.php";
+    if($_SESSION['id_usuario'] > 0)
+    {
+        $sql = "SELECT * FROM usuario WHERE id_usuario = $_SESSION[id_usuario]";
+        $resultado = $conn->query($sql);
+        $linha = $resultado->fetch_assoc();
+    }    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,47 +29,47 @@
         <form action="create.php" method="post" enctype="multipart/form-data">
             <div class="campo">
                 <label>Nome: </label>
-                <input type="text" name="nome">
+                <input type="text" name="nome" value="<?= isset($linha) ? $linha["nome"] : '' ?>">
             </div>
     
             <div class="campo">
                 <label>CPF: </label>
-                <input type="text" name="cpf">
+                <input type="text" name="cpf" value="<?= isset($linha) ? $linha["cpf"] : '' ?>">
             </div>
 
             <div class="campo">
                 <label>Login: </label>
-                <input type="text" name="login">
+                <input type="text" name="login" value="<?= isset($linha) ? $linha["login"] : '' ?>">
             </div>
 
             <div class="campo">
                 <label>Senha: </label>
-                <input type="text" name="senha">
+                <input type="text" name="senha" value="<?= isset($linha) ? $linha["senha"] : '' ?>">
             </div>
 
             <div class="campo">
                 <label>E-mail: </label>
-                <input type="text" name="email">
+                <input type="text" name="email" value="<?= isset($linha) ? $linha["email"] : '' ?>">
             </div>
 
             <div class="campo">
                 <label>Telefone: </label>
-                <input type="tel" name="telefone">
+                <input type="tel" name="telefone" value="<?= isset($linha) ? $linha["telefone"] : '' ?>">
             </div>
 
             <div class="campo">
                 <label>CEP: </label>
-                <input type="text" name="cep">
+                <input type="text" name="cep" value="<?= isset($linha) ? $linha["cep"] : '' ?>">
             </div>
 
             <div class="campo">
                 <label>Cidade: </label>
-                <input type="text" name="cidade">
+                <input type="text" name="cidade" value="<?= isset($linha) ? $linha["cidade"] : '' ?>">
             </div>
 
             <div class="campo">
                 <label>UF: </label>
-                <input type="text" name="uf">
+                <input type="text" name="uf" value="<?= isset($linha) ? $linha["uf"] : '' ?>">
             </div>
 
             <div class="cadastro">
