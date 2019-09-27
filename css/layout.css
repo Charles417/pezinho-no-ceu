@@ -2,10 +2,10 @@
     width: 100%;
     height: auto;
 }
-.rodape{
-    text-align: center;
+.descricao{
+    text-align: left;
     font-size: 22px;
-    color: cadetblue;
+    color: #000;
 }
 .container{
     padding-top: 20px;

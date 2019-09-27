@@ -26,7 +26,9 @@
 				<td><?= $row['id_usuario'];?></td>
 				<td><?= $row['nome'];?></td>
 				<td><?= $row['cpf'];?></td>
-				<td><button><?= "<a href='delete.php?id=" .$row['id_usuario'] . "'>apagar</a><hr>";?></button></td>
+				<td><button><?= "<a href='delete.php?id=" .$row['id_usuario'] . "'>apagar</a><hr>";?></button>
+				<button><?= "<a href='update.php?id=" .$row['id_usuario'] . "'>editar</a><hr>";?></button></td>
+				
 				</tr>
 		<?php
 				

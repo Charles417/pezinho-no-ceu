@@ -26,7 +26,8 @@
 				<td><?= $row['id_produto'];?></td>
 				<td><?= $row['nome'];?></td>
 				<td><?= $row['preco'];?></td>
-				<td><button><?= "<a href='delete.php?id=" .$row['id_produto'] . "'>apagar</a><hr>";?></button></td>
+				<td><button><?= "<a href='delete.php?id=" .$row['id_produto'] . "'>apagar</a><hr>";?></button>
+				<button><?= "<a href='update.php?id=" .$row['id_produto'] . "'>editar</a><hr>";?></button></td>
 				</tr>
 		<?php
 				
