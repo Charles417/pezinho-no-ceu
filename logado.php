@@ -23,9 +23,8 @@
                 $_SESSION['nome'] = $linha['nome'];
                 $_SESSION['logado'] = true;
 
-                var_dump($_SESSION['id_usuario']);
                 echo $_SESSION['nome'];
-                //header ('Location: home.php');
+                header ('Location: home.php');
                 
                 exit();
             }
