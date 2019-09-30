@@ -2,6 +2,7 @@
     require "../../conn.php";
     $id = $_GET['id'];
     $select = "SELECT * FROM `usuario` WHERE `id_usuario` = $id";
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
