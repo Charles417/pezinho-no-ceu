@@ -12,7 +12,9 @@
     <?php
     require 'conn.php';
     require 'logado.php'; 
-    require 'header.php';?>
+    require 'header.php';
+    ?>
+
 
 </head>
 <body>
@@ -78,21 +80,12 @@
             <?php
                 }
             ?>
+           
         </div>
+         
     </div>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <section><a class="conteudo"><img src="icons/tel.png" alt=""> (16) 994579779 / 992073929</a></section>
-                </div>
-                <div class="col-sm">
-                    <section><a class="conteudo"><img src="icons/mail.png" alt="">jose.tjunior@sp.senac.br</a></section>
-                </div>
-            </div>
-        </div>
-    </footer>
-     
-    
+    <?php            
+        require 'footer.php';
+    ?>     
 </body>
 </html>

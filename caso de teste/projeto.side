@@ -1,0 +1,206 @@
+{
+  "id": "a22f3abf-98ae-4f4a-91b6-f9ddfea3014a",
+  "version": "2.0",
+  "name": "projeto",
+  "url": "http://localhost:8080/pezinho-no-ceu/home.php",
+  "tests": [{
+    "id": "b44ad0b3-377c-456d-ab60-a14167762ac3",
+    "name": "teste 1",
+    "commands": [{
+      "id": "c4a4a325-117d-4399-b462-1e38da75278b",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/pezinho-no-ceu/home.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1dabf68-8f89-45ea-add1-e778a5af3347",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "930x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b57e3eb-b181-48e9-a890-c098d301aacf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggler-icon",
+      "targets": [
+        ["css=.navbar-toggler-icon", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfefc170-5cda-410c-8e02-cd4102ff0648",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/pezinho-no-ceu/login.php']", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f5c0c88-5e7e-440e-b77e-0f09d86b359e",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.login input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//body/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68a332b8-d7b3-47c7-939b-a1cd472df072",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.login input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//body/div/form/input", "xpath:position"]
+      ],
+      "value": "sumido"
+    }, {
+      "id": "ff6216c6-0758-49ef-b029-5becf1dc5f86",
+      "comment": "",
+      "command": "type",
+      "target": "name=senha",
+      "targets": [
+        ["name=senha", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='senha']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "666"
+    }, {
+      "id": "676a3b69-bff6-4dc5-bb30-a30aac57c7ee",
+      "comment": "",
+      "command": "click",
+      "target": "name=acao",
+      "targets": [
+        ["name=acao", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='acao']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0dd9dfa-097b-4724-bdf7-7490e0fa2b9f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggler-icon",
+      "targets": [
+        ["css=.navbar-toggler-icon", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5587d6f7-71da-4a47-bd4f-93fd43c04c45",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.nav-items > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/pezinho-no-ceu/logout.php']", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ed88418-3eb6-4498-b798-07fba247850b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggler-icon",
+      "targets": [
+        ["css=.navbar-toggler-icon", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "773a421a-ad0c-4605-8c19-5bf936795355",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost:8080/pezinho-no-ceu/login.php']", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44dc4b3f-372d-4500-a8a1-97b5c51d29aa",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.login input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//body/div/form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1eb087c-6682-44e7-840b-cb19a144fe2b",
+      "comment": "",
+      "command": "type",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.login input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='login']", "xpath:attributes"],
+        ["xpath=//body/div/form/input", "xpath:position"]
+      ],
+      "value": "sumido"
+    }, {
+      "id": "708a8586-9b9e-4481-87ad-8f28b357afcd",
+      "comment": "",
+      "command": "type",
+      "target": "name=senha",
+      "targets": [
+        ["name=senha", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='senha']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "fuicompracigarro"
+    }, {
+      "id": "f259dddc-e90b-4932-8a1e-354d872d7417",
+      "comment": "",
+      "command": "click",
+      "target": "name=acao",
+      "targets": [
+        ["name=acao", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='acao']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3bd01be5-bb43-4459-af0e-157093de3bcb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b44ad0b3-377c-456d-ab60-a14167762ac3"]
+  }],
+  "urls": ["http://localhost:8080/pezinho-no-ceu/home.php"],
+  "plugins": []
+}
