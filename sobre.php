@@ -14,6 +14,9 @@
     <?php require_once "header.php"?>
 </head>
 <body>
-     Página em desenvolvimento...
+    <div class="sobre">
+        Paginá em desenvolvimento... 
+    </div>
+    
 </body>
 </html>

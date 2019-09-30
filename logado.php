@@ -12,7 +12,7 @@
             echo 'Campos vazios';
         }else
         {
-            $sql = "SELECT * FROM `usuario` WHERE login = '$login' AND senha = md5('$senha')";
+            $sql = "SELECT * FROM `usuario` WHERE usuario = '$login' AND senha = md5('$senha')";
             $consulta_bd = $conn->query($sql);
 
             if($consulta_bd->num_rows  == 1)

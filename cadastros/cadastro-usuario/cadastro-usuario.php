@@ -1,6 +1,3 @@
-<?php
-    session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,22 +29,22 @@
 
             <div class="campo">
                 <label>Login: </label>
-                <input type="text" name="login">
+                <input type="text" name="usuario">
             </div>
 
             <div class="campo">
                 <label>Senha: </label>
-                <input type="text" name="senha">
+                <input type="password" name="senha">
             </div>
 
             <div class="campo">
                 <label>E-mail: </label>
-                <input type="text" name="email">
+                <input type="email" name="email">
             </div>
 
             <div class="campo">
                 <label>Telefone: </label>
-                <input type="tel" name="telefone">
+                <input type="text" name="telefone">
             </div>
 
             <div class="campo">
