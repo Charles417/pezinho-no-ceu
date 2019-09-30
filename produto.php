@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php session_start(); 
+    	require('conn.php');
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,22 +17,31 @@
     <body>
 
     <div class="borda">
+    <?php
+            $id = $_GET['id'];
+            $sql = "SELECT * FROM produto WHERE id_produto = $id";
+            $resultado = $conn->query($sql);
+            while ($row = $resultado->fetch_assoc()) {
+        ?>
         <div class="container">
             <div class="corpo row">
                 <section class="col-md-8">
                     <article class="artigo">
-                        <img class="galeria" src="slider-imagens/cap.PNG" alt="">
+                        <img class="imagem_produto" src="cadastros/cadastro-produto/images/<?= $row['imagem'];?>" alt="">
                     </article>
                 </section>
                 <aside class="nome col-md-4">
                     <div class="descricao-produto">
-                        <p class="nome">Nome do produto</p>
-                        <p class="preco">R$: </p> 
+                        <p class="nome"><?= $row['nome']; ?></p>
+                        <p class="preco">R$:<?= $row['preco']  ?></p> 
                         <button type="button" class="btn btn-primary">Comprar</button>
                         <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
                     </div>
+
                 </aside>
-            </div><hr><div class="descricao">Descrição: </div><hr>
+            </div><hr><div class="descricao"><?= $row['descricao']; ?></div><hr>
+
+            <?php } ?>
         </div>
     </div>
 </body>
