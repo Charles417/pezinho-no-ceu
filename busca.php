@@ -41,7 +41,8 @@
             ?>
     </div>
     <?php
-        }else{
+        }
+        else{
             echo "Desculpe nenhum produto com este nome foi encontrado!";
         }
     ?>

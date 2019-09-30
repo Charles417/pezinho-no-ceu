@@ -1,45 +1,6 @@
-<?php session_start(); ?>
-
-<?php 
-
-	require('../../conn.php');
-
-	$sql = "SELECT * FROM produto";
-
-	$resultado = $conn->query($sql);
-
-	if ($resultado->num_rows > 0)
-	{	?>
-		<table class="tabela" style="width:50%">
-			<thead>
-			<tr>
-			<th>ID</th>
-            <th>IMG</th>
-			<th>Nome</th>
-			<th>Preço</th>
-			<th>Descrição</th>
-			</tr>
-			</thead>
-		<?php
-			while ($row = $resultado->fetch_assoc())
-			{?>
-				<tr>
-				<td><?= $row['id_produto'];?></td>
-                <td><?= $row['imagem'];?></td>
-				<td><?= $row['nome'];?></td>
-				<td><?= $row['preco'];?></td>
-                <td><?= $row['descricao'];?></td>
-				</tr>
-		<?php
-				
-			}
-		}
-		else
-		{
-			echo "Nenhum resultado!";
-		}
+<?php session_start(); 
+    	require('conn.php');
 ?>
-</table>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -56,22 +17,31 @@
     <body>
 
     <div class="borda">
+    <?php
+            $id = $_GET['id'];
+            $sql = "SELECT * FROM produto WHERE id_produto = $id";
+            $resultado = $conn->query($sql);
+            while ($row = $resultado->fetch_assoc()) {
+        ?>
         <div class="container">
             <div class="corpo row">
                 <section class="col-md-8">
                     <article class="artigo">
-                        <img class="galeria" src="slider-imagens/cap.PNG" alt="">
+                        <img class="imagem_produto" src="cadastros/cadastro-produto/images/<?= $row['imagem'];?>" alt="">
                     </article>
                 </section>
                 <aside class="nome col-md-4">
                     <div class="descricao-produto">
-                        <p class="nome">Nome do produto</p>
-                        <p class="preco">R$: </p> 
+                        <p class="nome"><?= $row['nome']; ?></p>
+                        <p class="preco">R$:<?= $row['preco']  ?></p> 
                         <button type="button" class="btn btn-primary">Comprar</button>
                         <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
                     </div>
+
                 </aside>
-            </div><hr><div class="descricao">Descrição: </div><hr>
+            </div><hr><div class="descricao"><?= $row['descricao']; ?></div><hr>
+
+            <?php } ?>
         </div>
     </div>
 </body>

@@ -60,12 +60,13 @@
 
         <div class="cards row">
         <?php
+            
             $sql = "SELECT * FROM produto ORDER BY RAND() LIMIT 0,8";
             $resultado = $conn->query($sql);
             while ($row = $resultado->fetch_assoc()) {
         ?>
             <div class="col-md-3">
-                <a href="produto.php"><div class="card">
+                <a href="produto.php?id=<?php echo $row['id_produto']?>"><div class="card">
                     <img class="card-img-top" src="cadastros/cadastro-produto/images/<?= $row['imagem'];?>" alt="Imagem de capa do card">
                     <div class="card-body">
                         <h5 class="card-title"><?= $row['nome'];?></h5>
