@@ -22,47 +22,47 @@
         <form action="create.php" method="post" enctype="multipart/form-data">
             <div class="campo">
                 <label>Nome: </label>
-                <input type="text" name="nome">
+                <input type="text" name="nome" required>
             </div>
     
             <div class="campo">
                 <label>CPF: </label>
-                <input type="text" name="cpf">
+                <input type="text" name="cpf" required>
             </div>
 
             <div class="campo">
                 <label>Login: </label>
-                <input type="text" name="login">
+                <input type="text" name="login" required>
             </div>
 
             <div class="campo">
                 <label>Senha: </label>
-                <input type="text" name="senha">
+                <input type="text" name="senha" required>
             </div>
 
             <div class="campo">
                 <label>E-mail: </label>
-                <input type="text" name="email">
+                <input type="email" name="email" required>
             </div>
 
             <div class="campo">
                 <label>Telefone: </label>
-                <input type="tel" name="telefone">
+                <input type="tel" name="telefone" required>
             </div>
 
             <div class="campo">
                 <label>CEP: </label>
-                <input type="text" name="cep">
+                <input type="text" name="cep" required>
             </div>
 
             <div class="campo">
                 <label>Cidade: </label>
-                <input type="text" name="cidade">
+                <input type="text" name="cidade" required>
             </div>
 
             <div class="campo">
                 <label>UF: </label>
-                <input type="text" name="uf">
+                <input type="text" name="uf" required>
             </div>
 
             <div class="cadastro">
