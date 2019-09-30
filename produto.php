@@ -1,5 +1,46 @@
 <?php session_start(); ?>
 
+<?php 
+
+	require('../../conn.php');
+
+	$sql = "SELECT * FROM produto";
+
+	$resultado = $conn->query($sql);
+
+	if ($resultado->num_rows > 0)
+	{	?>
+		<table class="tabela" style="width:50%">
+			<thead>
+			<tr>
+			<th>ID</th>
+            <th>IMG</th>
+			<th>Nome</th>
+			<th>Preço</th>
+			<th>Descrição</th>
+			</tr>
+			</thead>
+		<?php
+			while ($row = $resultado->fetch_assoc())
+			{?>
+				<tr>
+				<td><?= $row['id_produto'];?></td>
+                <td><?= $row['imagem'];?></td>
+				<td><?= $row['nome'];?></td>
+				<td><?= $row['preco'];?></td>
+                <td><?= $row['descricao'];?></td>
+				</tr>
+		<?php
+				
+			}
+		}
+		else
+		{
+			echo "Nenhum resultado!";
+		}
+?>
+</table>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
