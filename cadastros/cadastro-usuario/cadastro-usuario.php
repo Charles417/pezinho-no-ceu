@@ -37,7 +37,7 @@
 
             <div class="campo">
                 <label>Senha: </label>
-                <input type="text" name="senha" required>
+                <input type="password" name="senha" required>
             </div>
 
             <div class="campo">
