@@ -34,10 +34,10 @@
                 <?php
                     }
 
-                    if (array_key_exists('logado', $_SESSION) && $_SESSION['logado'] === true) {
+                    if (array_key_exists('logado', $_SESSION) && $_SESSION['logado'] === true){
                 ?>
                  <li class="nav-item">
-                    <a class="nav-link" href="http://localhost:8080/pezinho-no-ceu/cadastros/cadastro-usuario/cadastro-usuario.php">Editar</a>
+                    <a class="nav-link" href="http://localhost:8080/pezinho-no-ceu/cadastros/cadastro-usuario/update-usuario.php?id=<?php echo $_SESSION['id_usuario'] ?>">Editar</a>
                 </li>
                 <li class="nav-items">
                     <a class="nav-link" href="http://localhost:8080/pezinho-no-ceu/logout.php">Logout</a>
