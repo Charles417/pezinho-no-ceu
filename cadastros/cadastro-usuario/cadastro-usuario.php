@@ -47,7 +47,7 @@
 
             <div class="campo">
                 <label>Telefone: </label>
-                <input type="tel" name="telefone" maxlength="14" required>
+                <input type="tel" name="telefone" maxlength="11" required>
             </div>
 
             <div class="campo">
