@@ -1,5 +1,5 @@
 <?php session_start(); 
-    	require('conn.php');
+    require('conn.php');
 ?>
 
 <!DOCTYPE html>
@@ -44,5 +44,8 @@
             <?php } ?>
         </div>
     </div>
+    <?php
+        require 'footer.php';
+    ?>
 </body>
 </html>

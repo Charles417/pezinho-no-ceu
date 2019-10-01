@@ -2,7 +2,9 @@
 
 <?php 
 
-	require('../../conn.php');
+	session_start();
+
+	require '../../conn.php';
 
 	$sql = "SELECT * FROM produto";
 

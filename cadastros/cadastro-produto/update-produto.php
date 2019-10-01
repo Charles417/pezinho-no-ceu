@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require "../../conn.php";
     $id = $_GET['id'];
     $select = "SELECT * FROM `produto` WHERE `id_produto` = $id";
