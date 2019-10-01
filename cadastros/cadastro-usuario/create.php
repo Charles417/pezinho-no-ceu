@@ -12,7 +12,7 @@
 	$cidade = $_POST['cidade'];
 	$uf = $_POST['uf'];
 
-	$sql = "INSERT INTO usuario (nome, cpf, usuario, senha, email, telefone, cep, cidade, uf) VALUES ( '$nome', $cpf, '$login', md5('$senha'), '$email', '$telefone', '$cep', '$cidade', '$uf')";
+	$sql = "INSERT INTO usuario (nome, usuario, cpf, senha, email, telefone, cep, cidade, uf) VALUES ( '$nome', '$login', $cpf, md5('$senha'), '$email', '$telefone', '$cep', '$cidade', '$uf')";
 
 	if ($conn->query($sql) == true)
 	{
