@@ -22,47 +22,47 @@
         <form action="create.php" method="post" enctype="multipart/form-data">
             <div class="campo">
                 <label>Nome: </label>
-                <input type="text" name="nome" required>
+                <input type="text" name="nome" maxlength="15" required>
             </div>
     
             <div class="campo">
                 <label>CPF: </label>
-                <input type="text" name="cpf" required>
+                <input type="text" name="cpf" maxlength="11"  required>
             </div>
 
             <div class="campo">
                 <label>Login: </label>
-                <input type="text" name="login" required>
+                <input type="text" name="usuario" maxlength="" required>
             </div>
 
             <div class="campo">
                 <label>Senha: </label>
-                <input type="password" name="senha" required>
+                <input type="password" name="senha" maxlength="20" required>
             </div>
 
             <div class="campo">
                 <label>E-mail: </label>
-                <input type="email" name="email" required>
+                <input type="email" name="email" maxlength="30" required>
             </div>
 
             <div class="campo">
                 <label>Telefone: </label>
-                <input type="tel" name="telefone" required>
+                <input type="tel" name="telefone" maxlength="14" required>
             </div>
 
             <div class="campo">
                 <label>CEP: </label>
-                <input type="text" name="cep" required>
+                <input type="text" name="cep" maxlength="8" required>
             </div>
 
             <div class="campo">
                 <label>Cidade: </label>
-                <input type="text" name="cidade" required>
+                <input type="text" name="cidade" maxlength="50" required>
             </div>
 
             <div class="campo">
                 <label>UF: </label>
-                <input type="text" name="uf" required>
+                <input type="text" name="uf" maxlength="2" required>
             </div>
 
             <div class="cadastro">
