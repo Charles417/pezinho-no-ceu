@@ -13,8 +13,8 @@
 <footer>
     <div class="container">
         <div>
-            <div class="col-sm-6">
-                <section><a class="conteudo1"><img src="icons/tel.png" alt=""> (16) 994579779 / 992073929</a></section>
+            <div class="col-sm">
+                <section><a class="conteudo1"><img src="icons/tel.png" alt="">(16)994579779 | (16)992073929</a></section>
             </div>
             <div class="col-sm">
                 <section><a class="conteudo2"><img src="icons/mail.png" alt="">jose.tjunior@sp.senac.br</a></section>
