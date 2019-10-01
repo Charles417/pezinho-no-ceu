@@ -102,23 +102,30 @@ footer
 {
     background-color: #63B8FF;
     display: flex;
+    flex-wrap: nowrap;
     height: 100px;
     width: 100%;
 }
 
-div .conteudo1
-{
-    display: flex!important;
-    flex-direction: row;
-    flex-wrap: nowrap;
+
+div .conteudo1,
+img icons/mail.png
+{   
+    width: 50px !important;
+    height: 400px !important;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
-/* .conteudo2
-{
+ div .conteudo2
+ img icons/mail.png
+{   
+    width: 50px;
+    height: 100px;
     display: flex !important;
     flex-direction: row;
     justify-content: center;
-} */
+} 
 
 
 
